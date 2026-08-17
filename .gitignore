@@ -1,2 +1,4 @@
 data/raw/
 venv/
+mnist_cnn.pth
+.vscode/

@@ -1,6 +1,6 @@
 # MNIST Digit Recognizer
 
-Image classification using Scikit-Learn.
+Image classification using Scikit-Learn, PyTorch and LightGBM
 
 ## Goal
 
@@ -29,14 +29,50 @@ data/raw/
 - Error analysis
 - Kaggle submission
 
+## Project Structure
+
+```
+MNIST-digit-recognize/
+│
+├── data/
+│   ├── raw/                     # train.csv, test.csv, sample_submission.csv
+│   └── processed/              
+│
+├── notebooks/
+│   └── mnist-digit-recognizer.ipynb   # полный пайплайн: EDA, обучение, оценка
+│   └── mnist_cnn.ipynb # Архитектура CNN для прогнозирования
+│
+├── results/
+│   ├── figures/                 # графики и визуализации
+│   └── submissions/             # submission.csv для Kaggle
+│
+│
+├── draw_digit.py                # PyQt6 приложение для рисования и распознавания
+├── README.md
+├── requirements.txt
+└── .gitignore
+```
+
+## Results
+
+|Model | Accuracy|
+|------------|-------|
+|LogRes      | 91.9% |
+|LightGBM    | 97.1% |
+|PyTorch CNN | 98.7% |
+
 ## Technologies
 
 - Python
 - NumPy
 - Pandas
 - Matplotlib
-- Scikit-Learn
+- Seaborn
 - LightGBM
+- PyTorch
+- PyQt6
+- Scikit-Learn
+- Jupyter
 
 ## Result
 
